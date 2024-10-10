@@ -1,6 +1,6 @@
 // Navbar.tsx
 import { MoonIcon } from '@heroicons/react/24/solid';
-
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 interface NavbarProps {
   toggleTheme: () => void;
   isDarkTheme: boolean;
