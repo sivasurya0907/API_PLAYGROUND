@@ -1,0 +1,243 @@
+/* Body and Font Styling */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  background-color: #181818;
+  color: #ffffff;
+}
+
+/* Container Styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Header and Title Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  color: #EA580C;
+  transition: color 0.3s ease;
+}
+
+/* Card Styling */
+.card {
+  background-color: #2e2e2e;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+}
+
+.result-card, .history-card {
+  background-color: #3a3a3a;
+  padding: 20px;
+  border-left: 5px solid #EA580C;
+}
+
+/* Textarea and Select Styles */
+.textarea {
+  width: 97.5%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #888888;
+  border-radius: 8px;
+  background-color: #252525;
+  color: #ffffff;
+  transition: border-color 0.3s ease;
+}
+.select{
+  width: 30%;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #888888;
+  border-radius: 8px;
+  background-color: #252525;
+  color: #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+.textarea:focus, .select:focus {
+  border-color: #EA580C;
+  outline: none;
+}
+
+/* Action Buttons Styling */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button.primary {
+  background-color: #EA580C;
+  color: #ffffff;
+}
+
+.button.secondary {
+  background-color: #f0f0f0;
+  color: #000000;
+}
+
+.button.primary:hover {
+  background-color: #e05500;
+  transform: translateY(-3px);
+}
+
+.button.secondary:hover {
+  background-color: #dddddd;
+  transform: translateY(-3px);
+}
+
+/* History Item Styling */
+.history-item {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #888888;
+  transition: background-color 0.3s ease;
+}
+
+.history-item:hover {
+  background-color: #505050;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  transition: background-color 0.3s;
+}
+
+.logo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: inherit;
+}
+
+.moon-icon {
+  cursor: pointer;
+  color: #EA580C;
+  width: 28px;
+  height: 28px;
+}
+
+/* Light Theme Adjustments */
+body.light {
+  background-color: #ffffff;
+  color: #ffffff;
+}
+
+body.light .navbar {
+  background-color: #f8f8f8;
+}
+
+body.light .title {
+  color: #EA580C;
+}
+
+/* Dark Theme Adjustments */
+body.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body.dark .navbar {
+  background-color: #333333;
+}
+
+body.dark .title {
+  color: #EA580C;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .textarea, .select {
+    font-size: 1rem;
+  }
+
+  .button {
+    font-size: 1rem;
+  }
+}
+
+/* Result and History Section Animation */
+.result, .history {
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #3a3a3a;
+  border-left: 5px solid #EA580C;
+  transition: background-color 0.3s ease;
+}
+
+.history-item {
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.history-item:hover {
+  background-color: #4e4e4e;
+}
+
+
+.labels
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.font-bold{
+  font-size:28px;
+  color: #EA580C;
+}
